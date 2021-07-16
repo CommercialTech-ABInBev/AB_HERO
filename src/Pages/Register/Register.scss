@@ -1,0 +1,134 @@
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-image: linear-gradient(#08A808, #051802);
+  overflow: hidden;
+
+  .head {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+    color: white;
+    text-transform: uppercase;
+
+    h1 {
+      margin: 0;
+      font-size: 27px;
+    }
+
+    .bar {
+      color: #FFCC29;
+    }
+  }
+
+  form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .form_body {
+      // margin: 1rem 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      display: flex;
+      gap: 2px;
+      ;
+  
+      input {
+        width: 93%;
+        height: 40px;
+        padding: 0px 10px;
+
+        &:focus {
+          border: none;
+          outline: none;
+          border-style: none;
+        }
+      }
+
+      label {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  };
+
+  button {
+    background-color: red;
+    padding: 0.5rem 2rem;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+
+    .first {
+      background-color: white;
+      font-weight: bold;
+      width: 40%;
+      padding: 3px 10px;
+      font-size:11px;
+    }
+
+    .second {
+      background-color: rgb(7,140,75);
+      background-image: linear-gradient(to right, #06663A 40%, #16AF5E , #06663A );
+      color: white;
+      font-weight: bold;
+      width: 100%;
+      padding: 3px 10px;
+      font-size:11px;
+    }
+
+    p {
+      margin: 0;
+    }
+  };
+
+  .img_holder {
+    width: 120px;
+    height: 60px;
+    position: relative;
+    bottom: -10px;
+    left: 40%;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .logo {
+    margin-top: 25px;
+    width: 240px;
+    height: 120px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+}
