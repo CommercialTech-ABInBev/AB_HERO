@@ -4,7 +4,6 @@ import Bottle from "../../Assets/Bottles plus lOGO.png"
 import NoSugar from "../../Assets/Non Sugar Added.png"
 import Logo from "../../Assets/Trophy Logo.png"
 import * as htmlToImage from 'html-to-image';
-import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
 
 
 import "./Create.scss"
@@ -62,7 +61,7 @@ function CreateImage() {
           <img src={NoSugar} alt="" />
         </div>
       </div>
-      <a className="poster"  href="" download="poster"/>
+      <a className="poster"  href="/" download="poster">null</a>
       <button onClick={download}>
         download
       </button>
