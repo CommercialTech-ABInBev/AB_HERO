@@ -50,7 +50,7 @@ function Register() {
       </div>
       <form>
         <div className="form_body">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Bar Name</label>
           <input onChange={e => handleChange(e)} value={user.name} name="name" type="text" />
         </div>
         <div className="form_body">
