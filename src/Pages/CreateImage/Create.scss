@@ -34,9 +34,11 @@
       top: 20%;
       right: 5%;
       width: 50vw;
+      overflow: hidden;
 
       h1 {
         text-transform: uppercase;
+        padding-left: 15px;
         font-size: 3vw;
 
         @media  screen and (max-width: 600px) {
@@ -90,7 +92,7 @@
         background-image: linear-gradient(to right, #06663A 40%, #16AF5E , #06663A );
         color: white;
         font-weight: bold;
-        width: 100%;
+        width: 93%;
         padding: 5px 20px;
         font-size:15px;
 
