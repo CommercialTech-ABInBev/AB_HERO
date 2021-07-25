@@ -3,9 +3,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  // gap: 20px;
+  font-family: kawak;
   align-items: center;
-  background-image: linear-gradient(#08A808, #051802);
+  background-image: linear-gradient(351.25deg, #FFBC0D 24.57%, #DC0000 113.54%);
+  font-family: 'Poppins', sans-serif;
   overflow: hidden;
 
   .head {
@@ -47,6 +48,8 @@
         margin-top: 2px;
         height: 40px;
         padding: 0px 10px;
+        border-style: none;
+        border-radius: 5px;
 
         &:focus {
           border: none;
@@ -72,34 +75,21 @@
     font-weight: bold;
     font-size: 25px;
     margin-top: 20px;
+    border-radius: 5px;
   }
 
   .footer {
     position: relative;
     bottom: 0px;
     width: 100%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-
-    .first {
-      background-color: white;
-      font-weight: bold;
-      width: 40%;
-      padding: 3px 10px;
-      font-size:11px;
-    }
+    text-align: center;
 
     .second {
-      background-color: rgb(7,140,75);
-      background-image: linear-gradient(to right, #06663A 40%, #16AF5E , #06663A );
-      color: white;
-      font-weight: bold;
+      background-color: white;
+      color: #1C4224;
       width: 100%;
-      padding: 3px 10px;
-      font-size:11px;
+      padding: 10px 0px 10px 0px;
+      font-size:12px;
     }
 
     p {
@@ -108,10 +98,10 @@
   };
 
   .img_holder {
-    width: 120px;
-    height: 60px;
-    position: relative;
-    bottom: -10px;
+    margin-top: 35px;
+    width: 320px;
+    height: 160px;
+    // position: relative;
     left: 40%;
     
     img {
@@ -127,6 +117,7 @@
     padding-bottom: 10px;
     width: 240px;
     height: 120px;
+    margin-bottom: 20px;
     
     img {
       width: 100%;

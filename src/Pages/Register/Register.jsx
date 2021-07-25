@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import "./Register.scss"
-import NoSugar from "../../Assets/Non Sugar Added.png"
 import moment from 'moment'
 import { useHistory } from "react-router-dom"
-import Logo from "../../Assets/Trophy Logo.png"
+import Logo from "../../Assets/Logo.png"
+import Text from "../../Assets/Text.png"
 import axios from "axios"
 
 function Register() {
@@ -32,7 +32,7 @@ function Register() {
       date: moment().format("MMM Do YY"),
       time: moment().format('LT')
     }
-    const res = await axios.post("https://sheet.best/api/sheets/c08b94c5-9a96-4b42-bf07-b08ee6f8a676", body)
+    const res = await axios.post("https://sheet.best/api/sheets/e540c3b3-adef-4d5c-9b10-bfad0051faad", body)
     console.log(res)
     if(res.status === 200) {
       history.push("/image")
@@ -43,10 +43,6 @@ function Register() {
     <div className="body">
       <div className="logo">
         <img src={Logo} alt="" />
-      </div>
-      <div className="head">
-        <h1>Honourable</h1>&nbsp;&nbsp;
-        <h1 className="bar">Bar Man</h1>
       </div>
       <form>
         <div className="form_body">
@@ -68,10 +64,9 @@ function Register() {
       </form>
       <button onClick={handleSubmit}>Submit</button>
       <div className="img_holder">
-        <img src={NoSugar} alt="" />
+        <img src={Text} alt="" />
       </div>
       <div className="footer">
-        <p className="first">Brewed with Honour</p>
         <p className="second">Drink Responsibly. Not for Sale to Persons Under the Age of 18.</p>
       </div>
     </div>

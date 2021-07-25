@@ -1,12 +1,17 @@
-.body {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    padding: 40px 0px;
+.body2 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #5B2D1F;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+  padding: 20px;
 
     @media  screen and (max-width: 600px) {
       width: 100%;
-      background-image: linear-gradient(#014F28, #0E8D45);
       padding: 0px 0px;
     }
 
@@ -14,31 +19,101 @@
       display: none;
     }
 
+    .download {
+      background-color: white;
+      width: 1000px;
+      height: 720px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      color: #012b18;
+
+      p {
+        font-size: 30px;
+        padding: 15px;
+        width: 80%;
+        margin: auto;
+      }
+
+      .span {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        background-color: red;
+        padding: 0.5rem 2rem;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      @media  screen and (max-width: 600px) {
+        width: 360px;
+        height: 300px;
+        background-color: white;
+      }
+    }
+
+  .overlay {
+    width: 360px;
+    height: 420px;
+    position: fixed;
+    z-index: 1;
+    background-image: url("../../Assets/Niger\ Bridge\ 3.png");
+  }
+
   .imageHolder {
     width: 1000px;
     height: 920px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     position: relative;
-    background-image: linear-gradient(#014F28, #0E8D45);
+    background-image: linear-gradient(351.25deg, #FFBC0D 24.57%, #DC0000 113.54%);
 
+    
     @media  screen and (max-width: 600px) {
-      width: 380px;
+      width: 360px;
       height: 420px;
-      background-image: linear-gradient(#014F28, #0E8D45);
+      background-image: linear-gradient(351.25deg, #FFBC0D 24.57%, #DC0000 113.54%);
+    }
+
+    .forHeroes {
+      width: 100%;
+      text-align: left;
+
+      b {
+        color: #D60200;
+      }
+    }
+    
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
     }
 
     .title {
-      color: white;
-      text-align: right;
-      position: absolute;
+      color: yellow;
+      text-align: left;
+      position: relative;
+      background-color: #1B4223;
+      border-radius: 4px;
+      line-height: 25px;
+      padding: 8px 15px 8px 15px;
       z-index: 1;
-      top: 20%;
-      right: 5%;
-      width: 50vw;
+      top: 60%;
+      left: 6%;
+      width: 40%;
       overflow: hidden;
 
       h1 {
-        text-transform: uppercase;
-        padding-left: 15px;
+        text-transform: capitalize;
+        margin: 0;
         font-size: 3vw;
 
         @media  screen and (max-width: 600px) {
@@ -48,22 +123,30 @@
 
       @media  screen and (max-width: 600px) {
         font-size: 15px;
-        top: 29%;
+        top: 32%;
       }
     }
 
 
     .bottle {
-      width: 40%;
-      height: 92%;
+      width: 45%;
+      height: 100%;
       position: absolute;
-      bottom: 0;
+      right: 10px;
+      bottom: -55px;
 
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
+    }
+
+    .heroes {
+      position: absolute;
+      left: 30px;
+      top: 65px;
+      font-size: 25px;
     }
 
     .last_footer {
@@ -91,7 +174,6 @@
         background-color: rgb(7,140,75);
         background-image: linear-gradient(to right, #06663A 40%, #16AF5E , #06663A );
         color: white;
-        font-weight: bold;
         width: 93%;
         padding: 5px 20px;
         font-size:15px;
@@ -111,14 +193,14 @@
       height: 120px;
       position: absolute;
       top: 70px;
-      left: 75%;
+      right: 75%;
 
       @media  screen and (max-width: 600px) {
-        width: 140px;
-        height: 70px;
+        width: 120px;
+      height: 60px;
         position: absolute;
-        top: 30px;
-        left: 65%;
+        top: 20px;
+        right: 65%;
       }
       
       img {
@@ -129,64 +211,25 @@
     }
     
     .details {
-      background-color: white;
       position: absolute;
       right: 10%;
       top: 50%;
-      width: 520px;
-      height: 240px;
-      border: 5px solid red;
-      border-radius: 4px;
-      padding: 10px 20px ;
-      text-align: left;
 
       @media  screen and (max-width: 600px) {
-        width: 200px;
-        height: 100px;
+        width: 180px;
+        height: 150px;
         top: 55%;
-        right: 5%;
-        border: 3px solid red;
+        left: 4%;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
       }
     }
 
-    .text {
-      h1 {
-        font-weight: bolder;
-        margin-top: 60px;
-        color: #06663A;
-
-        @media  screen and (max-width: 600px) {
-          margin-top: 15px;
-          font-size: 15px;
-        }
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 10px;
-        font-weight: bold;
-
-        
-        @media  screen and (max-width: 600px) {
-          font-size: 10px;
-          line-height: 5px;
-        }
-
-        b {
-          color: red;
-          font-size: 25px;
-          font-weight: bolder;
-
-          @media  screen and (max-width: 600px) {
-            font-size: 15px;
-          }
-        }
-
-        .price {
-          color: #06663A;
-        }
-      }
-    }
+    
 
     .no_sugar {
       width: 240px;
