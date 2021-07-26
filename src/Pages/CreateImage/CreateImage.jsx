@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Bottle from "../../Assets/Bottles_plus_lOGO.svg"
 import Logo from "../../Assets/Logo.png"
-import Scroll from "../../Assets/scroll.png"
+import Scroll from "../../Assets/scroll.svg"
 import * as htmlToImage from 'html-to-image';
 
 
