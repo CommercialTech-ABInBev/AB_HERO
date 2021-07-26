@@ -84,8 +84,12 @@
     }
 
     .forHeroes {
-      width: 100%;
+      width: 360px;
       text-align: left;
+
+      h1 {
+        font-weight: bold;
+      }
 
       b {
         color: #D60200;
