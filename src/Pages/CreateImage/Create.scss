@@ -86,6 +86,7 @@
     .forHeroes {
       width: 360px;
       position: absolute;
+      font-weight: bold;
       left: 30px;
       top: 85px;
       font-size: 25px;
@@ -98,6 +99,10 @@
       // .heroes {
      
       // }
+
+      span {
+        font-weight: bold;
+      }
 
 
       .heroes {
