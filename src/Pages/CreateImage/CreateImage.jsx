@@ -42,7 +42,8 @@ function CreateImage() {
           <img src={Logo} alt="" />
         </div>
         <div className="forHeroes">
-          <h1 className="heroes">FOR <b>HEROES</b></h1>
+          <span>FOR</span>
+          <span className="heroes">HEROES</span >
         </div>
         <div className="bottle">
           <img src={Bottle} alt="" />

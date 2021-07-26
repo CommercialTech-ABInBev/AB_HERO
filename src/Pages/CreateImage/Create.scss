@@ -85,14 +85,24 @@
 
     .forHeroes {
       width: 360px;
+      position: absolute;
+      left: 30px;
+      top: 85px;
+      font-size: 25px;
       text-align: left;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
 
-      h1 {
-        font-weight: bold;
-      }
+      // .heroes {
+     
+      // }
 
-      b {
+
+      .heroes {
         color: #D60200;
+        margin-left: 7px;
       }
     }
     
@@ -147,12 +157,7 @@
       }
     }
 
-    .heroes {
-      position: absolute;
-      left: 30px;
-      top: 65px;
-      font-size: 25px;
-    }
+
 
     .last_footer {
       position: absolute;
