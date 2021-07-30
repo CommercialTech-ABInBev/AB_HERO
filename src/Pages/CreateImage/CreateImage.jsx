@@ -14,7 +14,6 @@ function CreateImage() {
   const user = JSON.parse(localStorage.getItem("user"))
   const [shareButton, setShareButton] = useState(true)
   const [shareImage, setShareImage] = useState(null)
-  const [ setIsDownload] = useState(false)
   
 
   useEffect(() => {
@@ -37,7 +36,6 @@ function CreateImage() {
   
 
   const preDownload = async () => {
-    setIsDownload(true)
     download()
   }
 
