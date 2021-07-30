@@ -22,9 +22,11 @@
     .download {
       background-color: white;
       width: 1000px;
-      height: 720px;
+      height: 800px;
+      text-align: center;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
+      padding-bottom: 30px;
       font-family: 'Poppins', sans-serif;
       color: #012b18;
 
@@ -41,15 +43,29 @@
       }
 
       button {
-        background-color: red;
+        border: 1px solid red;
+        background-color: white;
         padding: 0.5rem 2rem;
-        border: none;
-        color: white;
-        text-transform: uppercase;
-        font-weight: bold;
+        color: red;
+        display: block;
+        margin: auto;
+        text-transform: capitalize;
         font-size: 25px;
+        width: 200px;
         margin-top: 20px;
         border-radius: 5px;
+      }
+
+      .btn2 {
+        border: none;
+        background-color: red;
+        color: white;
+      }
+
+      .socials {
+        display: flex;
+        width: 300px;
+        margin: auto;
       }
 
       @media  screen and (max-width: 600px) {
