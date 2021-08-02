@@ -30,6 +30,19 @@
       font-family: 'Poppins', sans-serif;
       color: #012b18;
 
+      .share_message {
+        color: #012b18;
+        // margin-top: 30px;
+
+        p {
+          font-size: 13px;
+        }
+      
+        .share {
+          color: red;
+        }
+      }
+
       p {
         font-size: 30px;
         padding: 15px;
