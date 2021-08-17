@@ -38,20 +38,25 @@ function CreateImage() {
     <div className="body2">
       <div className="imageHolder">
         <div className="title">
+          <div className="image_logo">
+            <img src={Logo} alt="" />
+          </div>
           <h1>{user.name}</h1>
         </div>
-        <div className="image_logo">
-          <img src={Logo} alt="" />
+        <div className="img_peeps">
+          <img src="https://res.cloudinary.com/dpregnexq/image/upload/a_hflip/v1629210079/DONE2_qzajgi.jpg"alt="" />
         </div>
-        <div className="forHeroes">
-          <span>FOR</span>
-          <span className="heroes">HEROES</span >
+        <div className="heros">
+          THE BEER FOR <b>HEROES</b>
         </div>
         <div className="bottle">
           <img src={Bottle} alt="" />
         </div>
         <div className="details">
           <img src={Scroll} alt="" />
+        </div>
+        <div  className="last_footer" >
+         <p className="second">Drink Responsible. Not for sale to Persons Under the Age of 18.</p> 
         </div>
       </div>
       <div className="download">

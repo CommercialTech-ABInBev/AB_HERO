@@ -9,10 +9,12 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   overflow: hidden;
   padding: 20px;
+  position: relative;
 
     @media  screen and (max-width: 600px) {
       width: 100%;
       padding: 0px 0px;
+      overflow: hidden;
     }
 
     a { 
@@ -103,13 +105,14 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: relative;
-    background-image: linear-gradient(351.25deg, #FFBC0D 24.57%, #DC0000 113.54%);
+    background-color: white;
+    overflow: hidden;
 
     
     @media  screen and (max-width: 600px) {
       width: 360px;
       height: 420px;
-      background-image: linear-gradient(351.25deg, #FFBC0D 24.57%, #DC0000 113.54%);
+      background-color: white;
     }
 
     .forHeroes {
@@ -147,23 +150,29 @@
     }
 
     .title {
-      color: yellow;
-      text-align: left;
+      color: green;
       position: relative;
-      background-color: #1B4223;
-      border-radius: 4px;
+      background-color: white;
+      background-image: linear-gradient(90deg, #EB4221 10.54%, #F5B517 80.57%);
       line-height: 25px;
       padding: 8px 15px 8px 15px;
       z-index: 1;
-      top: 60%;
-      left: 6%;
-      width: 40%;
+      top: 0%;
+      width: 91.7%;
+      height: 60px;
       overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
 
       h1 {
-        text-transform: capitalize;
+        text-transform: uppercase;
         margin: 0;
         font-size: 3vw;
+        color: black;
+        font-weight: 800px;
+        text-align: center;
 
         @media  screen and (max-width: 600px) {
           font-size: 6vw;
@@ -172,7 +181,22 @@
 
       @media  screen and (max-width: 600px) {
         font-size: 15px;
-        top: 32%;
+        top: 0;
+      }
+    }
+
+    .heros {
+      font-weight: bolder;
+      background-color: #386C34;
+      color: white;
+      padding: 0.3rem 0rem;
+      width: 55%;
+      position: absolute;
+      bottom: 30px;
+      right: 135px;
+
+      b {
+        color: #FFBC0D;
       }
     }
 
@@ -181,8 +205,8 @@
       width: 45%;
       height: 100%;
       position: absolute;
-      right: 10px;
-      bottom: -55px;
+      right: 0px;
+      bottom: -58px;
 
       img {
         width: 100%;
@@ -201,29 +225,17 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-
-      .first {
-        background-color: white;
-        font-weight: bold;
-        width: 40%;
-        padding: 5px 20px;
-        font-size:15px;
-
-        @media  screen and (max-width: 600px) {
-          font-size: 5px;
-        }
-      }
   
       .second {
-        background-color: rgb(7,140,75);
-        background-image: linear-gradient(to right, #06663A 40%, #16AF5E , #06663A );
-        color: white;
-        width: 93%;
+        background-color: white;
+        color: #386C34;
+        text-align: center;
+        width: 91%;
         padding: 5px 20px;
         font-size:15px;
 
         @media  screen and (max-width: 600px) {
-          font-size: 5px;
+          font-size: 10px;
         }
       }
   
@@ -232,19 +244,34 @@
       }
     };
 
-    .image_logo {
-      width: 240px;
-      height: 120px;
+    .img_peeps {
+      width: 265px;
+      height: 200px;
       position: absolute;
-      top: 70px;
-      right: 75%;
+      top: 50%;
+      left: -30px;
+      // right: 30%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .image_logo {
+      width: 200px;
+      height: 100px;
+      // position: absolute;
+      // top: 70px;
+      // right: 75%;
 
       @media  screen and (max-width: 600px) {
-        width: 120px;
-      height: 60px;
-        position: absolute;
-        top: 20px;
-        right: 65%;
+        width: 100px;
+        height: 50px;
+        // position: absolute;
+        // top: 20px;
+        // right: 65%;
       }
       
       img {
@@ -257,12 +284,12 @@
     .details {
       position: absolute;
       right: 10%;
-      top: 50%;
+      top: 20%;
 
       @media  screen and (max-width: 600px) {
         width: 180px;
         height: 150px;
-        top: 55%;
+        top: 20%;
         left: 4%;
       }
 
