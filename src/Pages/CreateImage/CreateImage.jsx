@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Bottle from "../../Assets/Bottles_plus_lOGO.svg"
 import Logo from "../../Assets/Logo.png"
-import Scroll from "../../Assets/scroll.svg"
+// import Scroll from "../../Assets/scroll.svg"
 import * as htmlToImage from 'html-to-image';
 
 
@@ -53,7 +53,7 @@ function CreateImage() {
           <img src={Bottle} alt="" />
         </div>
         <div className="details">
-          <img src={Scroll} alt="" />
+          <img src="https://res.cloudinary.com/dpregnexq/image/upload/v1629287612/Final_POC_Price_Creative-removebg-preview_pplw5l.png" alt="" />
         </div>
         <div  className="last_footer" >
          <p className="second">Drink Responsible. Not for sale to Persons Under the Age of 18.</p> 
