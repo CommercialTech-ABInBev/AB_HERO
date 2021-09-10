@@ -32,11 +32,9 @@ function Register() {
       date: moment().format("MMM Do YY"),
       time: moment().format('LT')
     }
-    const res = await axios.post("https://sheet.best/api/sheets/e540c3b3-adef-4d5c-9b10-bfad0051faad", body)
-    console.log(res)
-    if(res.status === 200) {
-      history.push("/image")
-    }
+    axios.post("https://sheet.best/api/sheets/e540c3b3-adef-4d5c-9b10-bfad0051faad", body)
+    history.push("/image")
+  
   }
 
   return (

@@ -7,6 +7,7 @@ import * as htmlToImage from 'html-to-image';
 
 
 import "./Create.scss"
+import axios from 'axios';
 
 
 function CreateImage() {
@@ -20,7 +21,7 @@ function CreateImage() {
     }
   })
 
-  const download = () => {
+  const download = async () => {
     let node = document.querySelector('.imageHolder');
     let poster = document.querySelector('.poster');
 
